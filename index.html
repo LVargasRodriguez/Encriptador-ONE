@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador ONE</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><img src="Logo.png" alt="Logo Alura"></h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="textoOriginal">
+            <form>
+                <label for="mensaje"></label>
+                <textarea cols="40" rows="10" id="mensaje" required placeholder="Ingrese el texto aqui"></textarea >
+            </form>
+            <p>Sin mayúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <input class="encriptar" type="submit" onclick="encriptar()" value="Encriptar"></input>
+                <input class="desencriptar" type="submit" onclick="desencriptar()" value="Desencriptar" ></input>
+                
+            </div>
+        </section>
+        <section>
+            <div class="resultado">
+                <img src="Muñeco.png" alt="Imagen de niño viendo un diamante con una lupa" id="muneco">
+                <textarea cols="20" rows="10" id="cifrado" required></textarea >
+                
+             </div>
+             <div class="copiar">
+                <input type="submit" onclick="copiar()" value= "Copiar" ></input> 
+             </div>
+        </section>
+        
+    
+    </main>
+    
+</body>
+<script type="text/javascript" src="enc.js"></script>
+</html>
